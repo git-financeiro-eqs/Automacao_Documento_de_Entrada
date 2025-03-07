@@ -1,7 +1,7 @@
-Arquitetura do Sistema
+# Arquitetura do Sistema  
 Este documento descreve a arquitetura do sistema de automação para processamento de notas fiscais (NFs) e lançamento de dados no sistema SIGA. O programa é composto por vários módulos que trabalham em conjunto para extrair, processar e validar os dados das NFs, além de realizar o lançamento no sistema interno.
 
-Visão Geral
+## Visão Geral  
 O sistema é dividido em módulos que desempenham funções específicas, desde a extração de dados de XMLs até a interação com o sistema SIGA para o lançamento das informações. A automação é orquestrada pelo módulo tigrinho, que coordena as ações dos demais módulos.
 
 # Módulos do Sistema
@@ -118,5 +118,5 @@ O sistema é dividido em módulos que desempenham funções específicas, desde 
   </tbody>
 </table>
 
-Considerações Finais
+## Considerações Finais  
 A arquitetura do sistema foi projetada para ser modular, permitindo que cada parte do processo seja executada de forma independente. Isso facilita a manutenção e a expansão do sistema, além de garantir que cada módulo tenha uma responsabilidade clara e bem definida.

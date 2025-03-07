@@ -84,7 +84,7 @@ O sistema é dividido em módulos que desempenham funções específicas, desde 
       <td>Orquestra o fluxo da automação, coordenando as suas ações junto aos demais módulos.</td>
       <td>
         <ul>
-          <li>Interage com o sistema SIGA para abrir processos e exportar XMLs.</li>
+          <li>Interage com o sistema SIGA e com o portal compras para abrir processos e exportar XMLs.</li>
           <li>Extrai e processa os dados dos XMLs usando a classe <code>ProcessadorXML</code>.</li>
           <li>Realiza o tratamento de itens fracionados usando a classe <code>TratadorItem</code>.</li>
           <li>Valida e lança os dados no sistema SIGA.</li>

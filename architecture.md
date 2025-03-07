@@ -81,7 +81,7 @@ O sistema é dividido em módulos que desempenham funções específicas, desde 
     </tr>
     <tr>
       <td><strong>tigrinho.py</strong></td>
-      <td>Orquestra o processo de automação, coordenando as ações dos demais módulos.</td>
+      <td>Orquestra o fluxo da automação, coordenando as suas ações junto aos demais módulos.</td>
       <td>
         <ul>
           <li>Interage com o sistema SIGA para abrir processos e exportar XMLs.</li>

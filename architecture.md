@@ -64,7 +64,6 @@ O sistema é dividido em módulos que desempenham funções específicas, desde 
       <td>
         <ul>
           <li>Exibe um manual breve sobre como o operador deve acionar o programa.</li>
-          <li>Fornece feedback durante a execução da automação.</li>
         </ul>
       </td>
     </tr>

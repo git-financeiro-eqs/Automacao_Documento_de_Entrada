@@ -5,7 +5,7 @@ Este documento descreve a arquitetura do sistema de automação para processamen
 O sistema é dividido em módulos que desempenham funções específicas, desde a extração de dados de XMLs até a interação com o sistema SIGA para o lançamento das informações. A automação é orquestrada pelo módulo tigrinho, que coordena as ações dos demais módulos.
 
 # Módulos do Sistema
-
+<br/>
 <table>
   <thead>
     <tr>
@@ -117,6 +117,7 @@ O sistema é dividido em módulos que desempenham funções específicas, desde 
     </tr>
   </tbody>
 </table>
+<br/>
 
 ## Considerações Finais  
 A arquitetura do sistema foi projetada para ser modular, permitindo que cada parte do processo seja executada de forma independente. Isso facilita a manutenção e a expansão do sistema, além de garantir que cada módulo tenha uma responsabilidade clara e bem definida.

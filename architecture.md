@@ -124,7 +124,7 @@ O sistema é dividido em módulos que desempenham funções específicas, desde 
 A arquitetura do sistema foi projetada para ser modular, permitindo que cada parte do processo seja executada de forma independente. Isso facilita a manutenção e a expansão do sistema, além de garantir que cada módulo tenha uma responsabilidade clara e bem definida.
 <br/>
 
-##Regras de negócio:
+## Regras de negócio:
 
 A Automação deve verificar se a filial de entrega posta no pedido corresponde a filial de entrega extraída da NF. Caso não corresponda, o processo deve ser pulado e os logs de erro devem ser disparados;
 

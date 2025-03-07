@@ -123,6 +123,7 @@ O sistema é dividido em módulos que desempenham funções específicas, desde 
 ## Considerações Finais  
 A arquitetura do sistema foi projetada para ser modular, permitindo que cada parte do processo seja executada de forma independente. Isso facilita a manutenção e a expansão do sistema, além de garantir que cada módulo tenha uma responsabilidade clara e bem definida.
 <br/>
+<br/>
 
 ## Regras de negócio:
 

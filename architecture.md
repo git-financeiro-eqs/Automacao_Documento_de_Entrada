@@ -109,7 +109,7 @@ O sistema é dividido em módulos que desempenham funções específicas, desde 
       <td>
         <ul>
           <li>Funções para formatação de valores.</li>
-          <li>Funções para interação com a interface gráfica (clicar, copiar, colar, etc.).</li>
+          <li>Funções para interação com a interface gráfica do SIGA (clicar, copiar, colar, etc.).</li>
           <li>Funções para tratamento de erros e exceções.</li>
           <li>Funções para envio de e-mails em caso de falhas.</li>
           <li>Funções para manipulação de listas e links.</li>

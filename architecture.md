@@ -122,11 +122,6 @@ O sistema é dividido em módulos que desempenham funções específicas, desde 
 </table>
 <br/>
 
-## Considerações Finais  
-A arquitetura do sistema foi projetada para ser modular, permitindo que cada parte do processo seja executada de forma independente. Isso facilita a manutenção e a expansão do sistema, além de garantir que cada módulo tenha uma responsabilidade clara e bem definida.
-<br/>
-<br/>
-
 ## Regras de negócio
 
 A Automação deve verificar se a filial de entrega posta no pedido corresponde a filial de entrega extraída da NF. Caso não corresponda, o processo deve ser pulado e os logs de erro devem ser disparados;
@@ -134,3 +129,8 @@ A Automação deve verificar se a filial de entrega posta no pedido corresponde 
 As naturezas de ativo 2020081, 2020060, 2020082, 2020083 são naturezas usadas em notas fiscais de serviço. Em casos onde o comprador utilizou essas naturezas erroneamente, a automação deve substitui-las pelas naturezas 2050006, 2050004, 2050008, como está posto no código, na função operadoresLancamento.copiar_natureza();
 
 O título (duplicata) gerado pelo SIGA para o financeiro pagar precisa de uma natureza da mesma forma que os itens do pedido. Há casos (quando na NF há destacado mais de um item e no pedido o comprador o cria destinando naturezas diferentes para esses itens) em que a natureza que o siga puxa para o título não corresponde a natureza do item de maior valor, ou, a natureza dos itens que somados correspondem a maior parcela de natureza do pedido. Nesses casos, a automação deve identificar a natureza majoritária do processo e inseri-la no campo correspondente à natureza da duplicata.
+<br/>
+<br/>
+
+## Considerações Finais  
+A arquitetura do sistema foi projetada para ser modular, permitindo que cada parte do processo seja executada de forma independente. Isso facilita a manutenção e a expansão do sistema, além de garantir que cada módulo tenha uma responsabilidade clara e bem definida.

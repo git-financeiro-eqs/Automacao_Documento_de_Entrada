@@ -55,13 +55,16 @@ Antes de rodar o projeto, certifique-se de ter instalado:
    2.1. Configure o repositório de XMLs:  
         - Crie uma pasta para armazenar os XMLs das notas fiscais.  
         - Atualize o caminho da pasta no código, se necessário.
+        - Se acaso não tiver tempo para inserir os XMLs na pasta, a rotina Processo Pagamento permite que você extraia
+          esse arquivo diretamente nela. O bot está programado para, em caso de não encontrar o XML na pasta repositório,
+          buscar o arquivo pela função de extração do próprio SIGA.
    
-3. **Execute o script principal**:  
+4. **Execute o script principal**:  
    ```sh
    python main.py
    ```
-4. Acione o botão **Inicializar Usuário** e aguarde até que o programa tenha feito login no portal do compras. Depois feche o **navegador Selenium** onde foi efetuado o login.
-5. Acione o botão **Play** e acompanhe o processo na interface do Microsiga e do portal do compras.
+5. Acione o botão **Inicializar Usuário** e aguarde até que o programa tenha feito login no portal do compras. Depois feche o **navegador Selenium** onde foi efetuado o login.
+6. Acione o botão **Play** e acompanhe o processo na interface do Microsiga e do portal do compras.
 <br/>
 
 ## **Observações**  

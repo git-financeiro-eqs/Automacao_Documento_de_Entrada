@@ -56,7 +56,7 @@ Antes de rodar o projeto, certifique-se de ter instalado:
         - Crie uma pasta para armazenar os XMLs das notas fiscais.  
         - Atualize o caminho da pasta no código, se necessário.  
         - Se acaso não tiver tempo para inserir os XMLs na pasta, a rotina Processo Pagamento permite que você extraia
-          esse arquivo diretamente nela. O bot está programado para, em caso de não encontrar o XML na pasta repositório,
+          esses arquivos diretamente nela. O bot está programado para, em caso de não encontrar o XML na pasta repositório,
           buscar o arquivo pela função de extração do próprio SIGA.
    
 4. **Execute o script principal**:  

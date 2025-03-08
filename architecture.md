@@ -5,6 +5,8 @@ Este documento descreve a arquitetura do sistema de automação para processamen
 O sistema é dividido em módulos que desempenham funções específicas, desde a extração de dados de XMLs até a interação com o sistema SIGA para o lançamento das informações. A automação é orquestrada pelo módulo tigrinho, que coordena as ações da automação.
 <br/>
 <br/>
+<br/>
+
 
 # Módulos do Sistema
 
@@ -125,7 +127,7 @@ A arquitetura do sistema foi projetada para ser modular, permitindo que cada par
 <br/>
 <br/>
 
-## Regras de negócio:
+## Regras de negócio
 
 A Automação deve verificar se a filial de entrega posta no pedido corresponde a filial de entrega extraída da NF. Caso não corresponda, o processo deve ser pulado e os logs de erro devem ser disparados;
 

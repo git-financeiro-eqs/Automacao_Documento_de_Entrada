@@ -26,7 +26,7 @@ Isso não é o e-commerce da Koerich, não vá apertar todos os botões ao mesmo
         self.info4 = "Como operar"
         self.texto4 = """Modo de operar:
  
-Abra o Microsiga e logue no usuário bot.contabil (Usuário: bot.contabil, Senha: EQSeng852@);
+Abra o Microsiga e logue no usuário bot.contabil (Usuário: **********, Senha: *********);
 Em seguida, vá para a rotina "Processo Pagamento" no módulo Compras; faça o filtro que desejar, mas, atente-se para o tipo de nota fiscal que será lançada, o bot só realiza os lançamentos de mercadoria!
  
 Aberta a rotina, clique em "Ver Documentos", isso abrirá o portal de compras da EQS; faça o login (esse processo sofre daquela instabilidade mencionada anteriormente, pode ser necessário logar 2x no portal, por via das duvidas, clique em "Ver Documentos" novamente e veja se abre o processo). Feito isso, agora é só inicializar o bot realizando o processo do botão "Inicializar Usuário"; quando concluído, basta dar o play e deixar acontecer!

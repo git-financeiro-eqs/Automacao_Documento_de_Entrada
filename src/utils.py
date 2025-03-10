@@ -1,6 +1,5 @@
 import pyautogui as ptg
 from selenium import webdriver
-from pyperclip import paste
 from time import sleep
 from email.message import EmailMessage
 import smtplib

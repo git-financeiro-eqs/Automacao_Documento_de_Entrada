@@ -1,4 +1,4 @@
-# BOT EM EXECUÇÃO
+# Bot em execução
 <br/>
 <br/>
 
@@ -32,4 +32,13 @@ https://github.com/user-attachments/assets/9f8d9136-fcc8-4314-9978-4962943f393d
 <br/>
 
 
-  
+https://github.com/user-attachments/assets/2b4ccd9f-1a2f-4d4f-a4b1-87b9962e9771
+
+<br/>
+
+- Quarta e ultima parte. Nesse ultimo trecho, após ter sido feito o processo de validação dos itens, o bot irá para a aba duplicatas afim de verificar o valor das parcelas. Ele verifica a primeira e, caso não corresponda ao valor total da NF (pagamento a vista) ele desce para procurar outra parcela. Em caso de haver outra parcela, ele a soma ao valor da primeira e verifica novamente se bate com o total da NF. Se não bater ele repete a ação. Caso ele chegue na ultima parcela e ainda assim a somatória de todas as outras não corresponderem ao total, ele faz a correção. A ultima parcela é na grande maioria das vezes a única que pode estar errada, então é ela que é corrigida com a diferença entre o Siga e a NF. Essa dinâmica vale tanto pra diferenças maiores que zero quanto menores, e também vale para pagamentos a vista, onde há somente uma parcela.
+Depois de corrigido o valor das parcelas, então é feita a validação da natureza da duplicata. Como explicado no código, um pedido com mais de um item pode ter mais de uma natureza. Tendo mais de uma natureza, a natureza majoritária precisa ser a mesma natureza vinculada a duplicata. O Bot realiza essa conferencia no momento em que verifica a porcentagem que cada natureza tem sobre o todo da nota fiscal. Caso o valor seja 0,00, então significa que no pedido teve apenas uma natureza, sendo assim, não é necessário fazer a correção. Caso contrario, o bot coleta uma a uma das porcentagens e separa a majoritária, depois ele torna a procura-la e, encontrando a maior, ele coleta a natureza no campo ao lado e vai até o primeiro campo de natureza presente na aba duplicatas para inseri-la ali, independente se a informação já estiver correta, ele sempre realiza esse procedimento.
+Então todo o processo de lançamento está feito, bastando apenas finaliza-lo, e é isso que acontece no restante do vídeo.
+
+
+

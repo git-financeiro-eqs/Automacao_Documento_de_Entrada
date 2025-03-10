@@ -2,7 +2,6 @@ from pathlib import Path
 from PIL import ImageTk, Image
 from tkinter import Tk, Canvas, Button, PhotoImage, Label, IntVar
 from tigrinho import robozinho
-from pyautogui import FailSafeException
 from time import sleep
 from utils import abrir_link_selenium, tratar_lista, checar_failsafe
 from inicializadorUsuario import inicializar_usuario

@@ -132,5 +132,11 @@ O título (duplicata) gerado pelo SIGA para o financeiro pagar precisa de uma na
 <br/>
 <br/>
 
+## Observações  
+
+A Biblioteca Pyautogui é uma maneira diferente de execultar a técnica da raspagem de tela. Para o Pyautogui execultar essa técnica, é preciso tirar um print do elemento que se deseja procurar, salvá-lo em algum diretório e passar o caminho desse arquivo para o método locateOnScreen. As imagens dos elementos que foram mapeadas para essa automação estão na pasta Imagens.
+<br/>
+<br/>
+
 ## Considerações Finais  
 A arquitetura do sistema foi projetada para ser modular, permitindo que cada parte do processo seja executada de forma independente. Isso facilita a manutenção e a expansão do sistema, além de garantir que cada módulo tenha uma responsabilidade clara e bem definida.

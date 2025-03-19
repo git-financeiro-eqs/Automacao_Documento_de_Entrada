@@ -86,10 +86,10 @@ def descer_copiar():
 
 def clicar_microsiga():
     try:
-        x, y = encontrar_centro_imagem(r'Imagens\IconeMicrosiga.png')
+        x, y = encontrar_centro_imagem(r'src\Imagens\IconeMicrosiga.png')
         ptg.click(x, y)
     except:
-        x, y = encontrar_centro_imagem(r'Imagens\IconeMicrosigaWin11.png')
+        x, y = encontrar_centro_imagem(r'src\Imagens\IconeMicrosigaWin11.png')
         ptg.click(x, y)
     checar_failsafe()
 
@@ -103,7 +103,7 @@ def voltar_descer(passos=1):
 def cancelar_lancamento():
     checar_failsafe()
     while True:
-        cancelar_lancamento_click = encontrar_centro_imagem(r'Imagens\BotaoCancelarLancamento.png')
+        cancelar_lancamento_click = encontrar_centro_imagem(r'src\Imagens\BotaoCancelarLancamento.png')
         try:
             x, y = cancelar_lancamento_click
             ptg.click(x,y, clicks=3, interval=0.1)
@@ -111,9 +111,9 @@ def cancelar_lancamento():
             break
         except:
             pass
-    aguarde = encontrar_centro_imagem(r'Imagens\ReferenciaAguarde.png') 
+    aguarde = encontrar_centro_imagem(r'src\Imagens\ReferenciaAguarde.png') 
     while type(aguarde) == tuple:
-        aguarde = encontrar_imagem(r'Imagens\ReferenciaAguarde.png') 
+        aguarde = encontrar_imagem(r'src\Imagens\ReferenciaAguarde.png') 
         sleep(1)
     checar_failsafe()
 
@@ -162,7 +162,7 @@ def reposicionar_robo():
 
 def cancelar_mudar():
     cancelar_lancamento()
-    mudar_a_selecao = encontrar_centro_imagem(imagem=r'Imagens\ClicarMudarSelecao.png')
+    mudar_a_selecao = encontrar_centro_imagem(imagem=r'src\Imagens\ClicarMudarSelecao.png')
     x, y = mudar_a_selecao
     ptg.click(x,y, clicks=4, interval=0.4)
     sleep(1)
@@ -201,16 +201,16 @@ def insistir_clique(imagem, cliques=2):
 
 
 def clicar_dados_da_nota(): 
-    encontrar = encontrar_centro_imagem(r'Imagens\BotaoDadosDaNota.png')
+    encontrar = encontrar_centro_imagem(r'src\Imagens\BotaoDadosDaNota.png')
     if type(encontrar) != tuple:            
-        insistir_clique(r'Imagens\BotaoDadosDaNota.png')
+        insistir_clique(r'src\Imagens\BotaoDadosDaNota.png')
         sleep(0.5)
         checar_failsafe()
     else:
         x, y = encontrar
         ptg.doubleClick(x, y)
     try:
-        aparece_enter = encontrar_imagem(r'Imagens\NCMIgnorar.png')
+        aparece_enter = encontrar_imagem(r'src\Imagens\NCMIgnorar.png')
         if type(aparece_enter) == pyscreeze.Box:
             sleep(0.5)
             ptg.press("enter")
@@ -221,14 +221,14 @@ def clicar_dados_da_nota():
 
 
 def clicar_valor_parcela():
-    valor_parcela = encontrar_centro_imagem(r'Imagens\ClicarParcela.png')
+    valor_parcela = encontrar_centro_imagem(r'src\Imagens\ClicarParcela.png')
     while type(valor_parcela) != tuple:
         ptg.moveTo(180, 200)
-        aba_duplicatas = encontrar_centro_imagem(r'Imagens\BotaoAbaDuplicatas.png')
+        aba_duplicatas = encontrar_centro_imagem(r'src\Imagens\BotaoAbaDuplicatas.png')
         x, y =  aba_duplicatas
         checar_failsafe()
         ptg.click(x,y, clicks=4, interval=0.1)
-        valor_parcela = encontrar_centro_imagem(r'Imagens\ClicarParcela.png')
+        valor_parcela = encontrar_centro_imagem(r'src\Imagens\ClicarParcela.png')
         sleep(0.4)
     x, y = valor_parcela
     ptg.click(x,y)
@@ -237,7 +237,7 @@ def clicar_valor_parcela():
 
 def clicar_natureza_duplicata():
     while True:
-        natureza_duplicata_clique = encontrar_centro_imagem(r'Imagens\ClicarNaturezaDuplicata.png')
+        natureza_duplicata_clique = encontrar_centro_imagem(r'src\Imagens\ClicarNaturezaDuplicata.png')
         checar_failsafe()
         if type(natureza_duplicata_clique) != tuple:
             ptg.moveTo(150, 250)

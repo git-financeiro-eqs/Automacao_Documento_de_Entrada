@@ -102,7 +102,7 @@ def contar_item_fracionado(quantidade_siga, valor_unit, quantidade_real):
 def verificar_valor_item(lista, indiceX):
     """
     Verifica se o valor do item no SIGA corresponde ao valor do item na nota fiscal (NF).
-    Se não corresponder, tenta corrigir o valor unitário ou quantidade.
+    Se não corresponder, tenta corrigir o valor unitário.
 
     :param lista: Lista contendo os valores dos itens da NF.
     :param indiceX: Índice do item atual na lista.
